@@ -104,6 +104,25 @@
     position: relative;
     margin-bottom: 20px;
 
+    .subtitle {
+      color: #57d6ff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .subtitle-line {
+        background-color: #57d6ff;
+        width: 30px;
+        height: 1px;
+        margin-right: 20px;
+      }
+    }
+
+    .title {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
     .big-left-line {
       position: absolute;
       height: 100%;
@@ -121,34 +140,19 @@
         flex: 1;
         max-width: 50%;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         .img {
           max-width: 100%;
-        }
-
-        .subtitle {
-          color: #57d6ff;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-
-          .subtitle-line {
-            background-color: #57d6ff;
-            width: 30px;
-            height: 1px;
-            margin-right: 20px;
-          }
+          width: 100%;
         }
 
         .bottom-link {
           position: absolute;
           bottom: 30px;
           left: 30px;
-        }
-
-        .title {
-          font-size: 28px;
-          margin-bottom: 40px;
         }
 
         .text {
@@ -161,6 +165,65 @@
           height: 1px;
           background-color: gray;
         }
+      }
+    }
+
+    .fast-start {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 70px;
+
+      .steps {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 80%;
+        align-items: center;
+        justify-content: center;
+
+        .connection-line {
+          min-width: 100px;
+          height: 1px;
+          background-color: #57d6ff;
+          margin: 0 20px;
+        }
+
+        .step-group {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .step {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          i {
+            font-size: 50px;
+            margin-bottom: 15px;
+            color: #57d6ff;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 800px) {
+      .steps {
+        position: relative;
+      }
+
+      .step-group {
+        min-width: 100%;
+      }
+
+      .connection-line.middle {
+        position: absolute;
+        transform: rotate(-30deg);
+        width: 120px;
       }
     }
   }

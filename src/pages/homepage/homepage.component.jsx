@@ -52,6 +52,38 @@ const HomePage = () => (
           </Link>
         </div>
       </div>
+      <div className="fast-start">
+        <span className="subtitle">
+          <div className="subtitle-line"></div>
+          Fast start
+        </span>
+        <h1 className="title">Start gaming</h1>
+        <div className="steps">
+          <div className="step-group">
+            <div className="step">
+              <i className="fa-solid fa-user"></i>
+              Create an account
+            </div>
+            <div className="connection-line"></div>
+            <div className="step">
+              <i className="fa-solid fa-download"></i>
+              Download the module
+            </div>
+          </div>
+          <div className="connection-line middle"></div>
+          <div className="step-group">
+            <div className="step">
+              <i className="fa-solid fa-check"></i>
+              Select plan
+            </div>
+            <div className="connection-line"></div>
+            <div className="step">
+              <i className="fa-solid fa-gamepad"></i>
+              Start playing
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );
