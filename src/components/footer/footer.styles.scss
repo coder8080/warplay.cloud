@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 20px 30px;
+  background-color: black;
+  color: white;
+  align-items: center;
+
+  .logo-container {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+
+  .rights {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+}

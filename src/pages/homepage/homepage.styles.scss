@@ -269,5 +269,22 @@
         }
       }
     }
+
+    .servers-map {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .map-container {
+        position: relative;
+      }
+
+      .position {
+        position: absolute;
+        left: 210px;
+        bottom: 45px;
+      }
+    }
   }
 }

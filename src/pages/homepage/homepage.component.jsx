@@ -1,5 +1,7 @@
 import ComputerAndServer from "../../assets/computer-and-server.png";
 import BrowserScreenshots from "../../assets/screenshots.png";
+import Map from "../../assets/map.png";
+import Pos from "../../assets/pos.png";
 import CustomButton from "../../components/custom-button/custom-button.components";
 import { Link } from "react-router-dom";
 
@@ -117,6 +119,17 @@ const HomePage = () => (
         </div>
         <div className="col">
           <img src={BrowserScreenshots} alt="screenshots" />
+        </div>
+      </div>
+      <div className="servers-map">
+        <span className="subtitle">
+          <div className="subtitle-line"></div>
+          Game servers on the map
+        </span>
+        <h1 className="title">Location map</h1>
+        <div className="map-container">
+          <img src={Map} alt="map" />
+          <img src={Pos} alt="position" className="position" />
         </div>
       </div>
     </div>

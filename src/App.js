@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 
 import HomePage from "./pages/homepage/homepage.component";
 import Header from "./components/header/header.component";
+import Footer from "./components/footer/footer.component";
 import store from "./redux/store";
 import "./App.css";
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
+      <Footer />
     </Provider>
   );
 }
