@@ -1,0 +1,58 @@
+.plan-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f2631;
+  margin: 5px;
+  padding: 30px;
+  border-radius: 5px;
+  height: 100%;
+  flex: 1;
+  max-width: 300px;
+
+  .plan-card-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .plan-card-price {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .plan-card-available {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .plan-card-desctiption {
+    font-size: 20px;
+
+    * {
+      font-family: "Roboto", sans-serif;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+
+  .button-container {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  &.inverted-card {
+    background-color: #57d6ff;
+    color: black;
+  }
+}

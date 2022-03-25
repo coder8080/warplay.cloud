@@ -77,12 +77,12 @@
 
       .bottom-button-container {
         position: absolute;
-        bottom: 100px;
+        bottom: 10%;
       }
 
       .line-after-button {
         position: absolute;
-        bottom: -50px;
+        bottom: -10%;
         width: 1px;
         background-color: white;
         animation: toBottom2 4s linear infinite;
@@ -92,7 +92,7 @@
             height: 0;
           }
           to {
-            height: 140px;
+            height: 18%;
           }
         }
       }
@@ -138,7 +138,7 @@
       .col {
         padding: 30px;
         flex: 1;
-        max-width: 50%;
+        flex: 1;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -151,7 +151,7 @@
 
         .bottom-link {
           position: absolute;
-          bottom: 30px;
+          bottom: 10px;
           left: 30px;
         }
 
@@ -165,6 +165,12 @@
           height: 1px;
           background-color: gray;
         }
+      }
+    }
+
+    @media (max-width: 800px) {
+      .how-does-it-works {
+        flex-direction: column-reverse;
       }
     }
 
@@ -209,22 +215,34 @@
           }
         }
       }
+
+      .start-now-link {
+        margin: 50px auto 0;
+      }
+
+      @media (max-width: 800px) {
+        .steps {
+          position: relative;
+        }
+
+        .step-group {
+          min-width: 100%;
+        }
+
+        .connection-line.middle {
+          position: absolute;
+          transform: rotate(-30deg);
+          width: 120px;
+        }
+      }
     }
 
-    @media (max-width: 800px) {
-      .steps {
-        position: relative;
-      }
-
-      .step-group {
-        min-width: 100%;
-      }
-
-      .connection-line.middle {
-        position: absolute;
-        transform: rotate(-30deg);
-        width: 120px;
-      }
+    .available-options {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 70px;
     }
   }
 }

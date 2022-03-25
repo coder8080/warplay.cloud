@@ -1,0 +1,17 @@
+.card-button {
+  background-color: #57d6ff;
+  padding: 10px 50px;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &.inverted {
+    color: white;
+    background-color: #141c24;
+  }
+}

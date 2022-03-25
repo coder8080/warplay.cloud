@@ -1,7 +1,10 @@
 import ComputerAndServer from "../../assets/computer-and-server.png";
 import CustomButton from "../../components/custom-button/custom-button.components";
-import "./homepage.styles.scss";
 import { Link } from "react-router-dom";
+
+import OptionCards from "../../components/option-cards/option-cards.component";
+import Underline from "../../components/underline/underline.component";
+import "./homepage.styles.scss";
 
 const HomePage = () => (
   <div className="homepage">
@@ -83,6 +86,18 @@ const HomePage = () => (
             </div>
           </div>
         </div>
+        <Link className="link start-now-link" to="/download">
+          Start now
+        </Link>
+      </div>
+      <div className="available-options">
+        <span className="subtitle">
+          <div className="subtitle-line"></div>
+          Flexible plans
+        </span>
+        <h1 className="title">Available subscibtions</h1>
+        <OptionCards />
+        <Underline />
       </div>
     </div>
   </div>

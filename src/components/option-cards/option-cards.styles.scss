@@ -1,0 +1,13 @@
+.option-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+@media (max-width: 800px) {
+  .option-cards {
+    flex-direction: column;
+  }
+}
