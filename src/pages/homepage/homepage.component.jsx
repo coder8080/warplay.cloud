@@ -2,7 +2,7 @@ import ComputerAndServer from "../../assets/computer-and-server.png";
 import BrowserScreenshots from "../../assets/screenshots.png";
 import Map from "../../assets/map.png";
 import Pos from "../../assets/pos.png";
-import CustomButton from "../../components/custom-button/custom-button.components";
+import CustomButtonLink from "../../components/custom-button-link/custom-button-link.component";
 import { Link } from "react-router-dom";
 
 import OptionCards from "../../components/option-cards/option-cards.component";
@@ -22,12 +22,13 @@ const HomePage = () => (
         </div>
         <div className="line" />
         <div className="bottom-button-container">
-          <CustomButton>Upgrade</CustomButton>
+          <CustomButtonLink destName="content">Upgrade</CustomButtonLink>
         </div>
         <div className="line-after-button" />
       </div>
     </div>
     <div className="content">
+      <a name="content" />
       <div className="big-left-line"></div>
       <div className="how-does-it-works">
         <div className="col">
@@ -128,7 +129,7 @@ const HomePage = () => (
         </span>
         <h1 className="title">Location map</h1>
         <div className="map-container">
-          <img src={Map} alt="map" />
+          <img src={Map} alt="map" className="map" />
           <img src={Pos} alt="position" className="position" />
         </div>
       </div>

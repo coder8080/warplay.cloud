@@ -278,12 +278,21 @@
 
       .map-container {
         position: relative;
-      }
 
-      .position {
-        position: absolute;
-        left: 210px;
-        bottom: 45px;
+        img {
+          max-width: 100%;
+        }
+
+        .map {
+          width: 100%;
+        }
+
+        .position {
+          width: 30%;
+          position: absolute;
+          left: 25%;
+          bottom: 8%;
+        }
       }
     }
   }
