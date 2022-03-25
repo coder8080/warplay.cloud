@@ -1,4 +1,5 @@
 import ComputerAndServer from "../../assets/computer-and-server.png";
+import BrowserScreenshots from "../../assets/screenshots.png";
 import CustomButton from "../../components/custom-button/custom-button.components";
 import { Link } from "react-router-dom";
 
@@ -98,6 +99,25 @@ const HomePage = () => (
         <h1 className="title">Available subscibtions</h1>
         <OptionCards />
         <Underline />
+      </div>
+      <div className="play-in-browser">
+        <div className="col">
+          <span className="subtitle">
+            <div className="subtitle-line"></div>
+            You can play directly in your browser
+          </span>
+          <h1 className="title">Run games on all devices</h1>
+          <p className="text">
+            Our module is availble for all popular operating systems and work on
+            all computers.
+          </p>
+          <Link className="link bottom-link" to="/download">
+            Open in browser
+          </Link>
+        </div>
+        <div className="col">
+          <img src={BrowserScreenshots} alt="screenshots" />
+        </div>
       </div>
     </div>
   </div>

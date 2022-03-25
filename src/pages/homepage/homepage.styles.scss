@@ -131,6 +131,11 @@
       left: 10px;
     }
 
+    .text {
+      color: #ababab;
+      font-family: "Roboto", sans-serif;
+    }
+
     .how-does-it-works {
       display: flex;
       flex-direction: row;
@@ -153,11 +158,6 @@
           position: absolute;
           bottom: 10px;
           left: 30px;
-        }
-
-        .text {
-          color: #ababab;
-          font-family: "Roboto", sans-serif;
         }
 
         .line-between-p {
@@ -243,6 +243,31 @@
       justify-content: center;
       align-items: center;
       margin-top: 70px;
+    }
+
+    .play-in-browser {
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+      padding-left: 30px;
+
+      .col {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+          max-width: 90%;
+          width: 90%;
+        }
+      }
+
+      @media (max-width: 800px) {
+        & {
+          flex-direction: column;
+        }
+      }
     }
   }
 }
