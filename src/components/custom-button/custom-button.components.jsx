@@ -1,7 +1,10 @@
 import "./custom-button.styles.scss";
 
 const CustomButton = ({ children, ...props }) => (
-  <button className="btn" {...props}>
+  <button
+    {...props}
+    className={`btn ${props.className ? props.className : ""}`}
+  >
     {children}
   </button>
 );

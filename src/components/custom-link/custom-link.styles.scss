@@ -1,0 +1,13 @@
+.custom-link {
+  font-size: 36px;
+  color: gray;
+  text-decoration: none;
+
+  &:visited {
+    color: gray;
+  }
+
+  &.active {
+    color: white;
+  }
+}

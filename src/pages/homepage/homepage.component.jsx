@@ -8,6 +8,7 @@ import { Component } from "react";
 
 import OptionCards from "../../components/option-cards/option-cards.component";
 import Underline from "../../components/underline/underline.component";
+import Footer from "../../components/footer/footer.component";
 import "./homepage.styles.scss";
 
 const onScroll = () => {
@@ -27,6 +28,10 @@ const onScroll = () => {
 class HomePage extends Component {
   componentDidMount() {
     document.querySelector("body").onscroll = onScroll;
+  }
+
+  componentWillUnmount() {
+    document.querySelector("body").onscroll = null;
   }
 
   render() {
@@ -75,7 +80,7 @@ class HomePage extends Component {
                 Gb RAM and internet access 15 mbit/s on all operating systems -
                 Windows 7, 8, 10, 11, MacOs and Linux
               </p>
-              <Link className="link bottom-link" to="/download">
+              <Link className="link bottom-link" to="/register">
                 Download
               </Link>
             </div>
@@ -111,7 +116,7 @@ class HomePage extends Component {
                 </div>
               </div>
             </div>
-            <Link className="link start-now-link" to="/download">
+            <Link className="link start-now-link" to="/register">
               Start now
             </Link>
           </div>
@@ -155,6 +160,7 @@ class HomePage extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

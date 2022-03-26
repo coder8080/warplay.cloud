@@ -1,0 +1,13 @@
+.custom-input {
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  font-size: 20px;
+  width: 270px;
+  margin-bottom: 10px;
+
+  &:active {
+    outline: none;
+  }
+}
