@@ -1,0 +1,12 @@
+.register-links {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .back-to-main {
+    color: white;
+    font-size: 30px;
+  }
+}

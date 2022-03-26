@@ -3,22 +3,12 @@ import { Link } from "react-router-dom";
 import "./register-page.styles.scss";
 import CustomInput from "../../components/custom-input/custom-input.component";
 import CustomButton from "../../components/custom-button/custom-button.components";
-import CustomLink from "../../components/custom-link/custom-link.component";
+import RegisterLinks from "../../components/register-links/register-links.components";
 
 const RegisterPage = () => (
   <div className="register-page">
     <div className="register-content">
-      <div className="register-links">
-        <Link to="/" className="back-to-main">
-          <i className="fa-solid fa-caret-left"></i>
-        </Link>
-        <CustomLink to="/register" className="register-link">
-          Register
-        </CustomLink>
-        <CustomLink to="/login" className="register-link">
-          Log in
-        </CustomLink>
-      </div>
+      <RegisterLinks />
       <CustomInput type="text" placeholder="Email / Phone" />
       <CustomInput type="password" placeholder="Password" />
       <CustomButton className="bottom-button">Register</CustomButton>
