@@ -144,7 +144,7 @@ class HomePage extends Component {
                 You can play directly in your browser
               </span>
               <h1 className="title">Run games on all devices</h1>
-              <p className="text" data-aos="fade-left">
+              <p className="text" data-aos="fade-down">
                 Our module is availble for all popular operating systems and
                 work on all computers.
               </p>
