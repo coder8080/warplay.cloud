@@ -17,23 +17,8 @@
     ></script>
     <title>WARPLAY.CLOUD</title>
   </head>
-  <body onscroll="onScroll()">
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script>
-      let onScroll = () => {
-        const header = document.querySelector(".header");
-        const heading = document.querySelector(".heading");
-        const scroll_position = window.pageYOffset;
-
-        if (scroll_position > 0) {
-          header.classList.add("active");
-          heading.classList.add("deactive");
-        } else {
-          header.classList.remove("active");
-          heading.classList.remove("deactive");
-        }
-      };
-    </script>
   </body>
 </html>
