@@ -5,6 +5,8 @@ import Pos from "../../assets/pos.png";
 import CustomButtonLink from "../../components/custom-button-link/custom-button-link.component";
 import { Link } from "react-router-dom";
 import { Component } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import OptionCards from "../../components/option-cards/option-cards.component";
 import Underline from "../../components/underline/underline.component";
@@ -27,7 +29,12 @@ const onScroll = () => {
 
 class HomePage extends Component {
   componentDidMount() {
-    document.querySelector("body").onscroll = onScroll;
+    AOS.init({ duration: 1000 });
+    let nowOnscroll = document.querySelector("body").onscroll;
+    document.querySelector("body").onscroll = () => {
+      nowOnscroll?.();
+      onScroll();
+    };
   }
 
   componentWillUnmount() {
@@ -62,20 +69,21 @@ class HomePage extends Component {
                 src={ComputerAndServer}
                 alt="computer-and-server"
                 className="img"
+                data-aos="fade-down"
               />
             </div>
             <div className="col">
-              <span className="subtitle">
+              <span className="subtitle" data-aos="fade-up">
                 <div className="subtitle-line"></div>
                 Cloud gaming
               </span>
               <h1 className="title">How it works</h1>
-              <p className="text">
+              <p className="text" data-aos="fade-right">
                 Our servers start the game and send you an image, which you can
                 control in the real time!
               </p>
               <div className="line-between-p"></div>
-              <p className="text">
+              <p className="text" data-aos="fade-right">
                 The app wil start on every PC with processor at least 1.5GHz, 1
                 Gb RAM and internet access 15 mbit/s on all operating systems -
                 Windows 7, 8, 10, 11, MacOs and Linux
@@ -86,31 +94,31 @@ class HomePage extends Component {
             </div>
           </div>
           <div className="fast-start">
-            <span className="subtitle">
+            <span className="subtitle" data-aos="fade-up">
               <div className="subtitle-line"></div>
               Fast start
             </span>
             <h1 className="title">Start gaming</h1>
             <div className="steps">
               <div className="step-group">
-                <div className="step">
+                <div className="step" data-aos="fade-up">
                   <i className="fa-solid fa-user"></i>
                   Create an account
                 </div>
-                <div className="connection-line"></div>
-                <div className="step">
+                <div className="connection-line" data-aos="zoom-in"></div>
+                <div className="step" data-aos="fade-down">
                   <i className="fa-solid fa-download"></i>
                   Download the module
                 </div>
               </div>
-              <div className="connection-line middle"></div>
+              <div className="connection-line middle" data-aos="zoom-in"></div>
               <div className="step-group">
-                <div className="step">
+                <div className="step" data-aos="fade-up">
                   <i className="fa-solid fa-check"></i>
                   Select plan
                 </div>
-                <div className="connection-line"></div>
-                <div className="step">
+                <div className="connection-line" data-aos="zoom-in"></div>
+                <div className="step" data-aos="fade-down">
                   <i className="fa-solid fa-gamepad"></i>
                   Start playing
                 </div>
@@ -121,7 +129,7 @@ class HomePage extends Component {
             </Link>
           </div>
           <div className="available-options">
-            <span className="subtitle">
+            <span className="subtitle" data-aos="fade-up">
               <div className="subtitle-line"></div>
               Flexible plans
             </span>
@@ -131,12 +139,12 @@ class HomePage extends Component {
           </div>
           <div className="play-in-browser">
             <div className="col">
-              <span className="subtitle">
+              <span className="subtitle" data-aos="fade-up">
                 <div className="subtitle-line"></div>
                 You can play directly in your browser
               </span>
               <h1 className="title">Run games on all devices</h1>
-              <p className="text">
+              <p className="text" data-aos="fade-left">
                 Our module is availble for all popular operating systems and
                 work on all computers.
               </p>
@@ -145,16 +153,20 @@ class HomePage extends Component {
               </Link>
             </div>
             <div className="col">
-              <img src={BrowserScreenshots} alt="screenshots" />
+              <img
+                data-aos="fade-down"
+                src={BrowserScreenshots}
+                alt="screenshots"
+              />
             </div>
           </div>
           <div className="servers-map">
-            <span className="subtitle">
+            <span className="subtitle" data-aos="fade-up">
               <div className="subtitle-line"></div>
               Game servers on the map
             </span>
             <h1 className="title">Location map</h1>
-            <div className="map-container">
+            <div className="map-container" data-aos="fade-down">
               <img src={Map} alt="map" className="map" />
               <img src={Pos} alt="position" className="position" />
             </div>
