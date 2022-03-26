@@ -49,7 +49,19 @@ Create a production build:
 npm run build
 ```
 
-After this command, you will get all built and minified files in `build` directory in the root project folder. They are your production build. You can serve them with `nginx`, `serve`, or directly open `index.html` in yout browser.
+After this command, you will get all built and minified files in `build`
+directory in the root project folder. They are your production build. You
+can serve them with `nginx`, `serve`, or with any other instrument for
+serving files on some port.
+
+Here are commands that you need to run if you want to use serve:
+
+```
+npm install -g serve
+serve -s build
+```
+
+In your terminal you will see the link to the site.
 
 # Troubleshoot
 
