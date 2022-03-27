@@ -5,6 +5,7 @@
   min-height: 100vh;
   background-color: #141c24;
   color: white;
+
   .systems-content {
     display: flex;
     flex-direction: column;
@@ -24,10 +25,21 @@
     }
 
     .available-systems {
-      width: 500px;
+      max-width: 500px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 800px) {
+        & {
+          flex-direction: column;
+        }
+
+        img {
+          margin-bottom: 15px;
+        }
+      }
 
       img {
         width: 100px;
