@@ -12,8 +12,13 @@ To run this project on your PC, you need:
 
 - Working terminal (konsole, powershell, gnome-terminal, etc.)
 - Git command line tool: [download](https://git-scm.com/downloads)
-- Node.js: [download](https://nodejs.org/en/download/)
-- Npm (usually installs with node.js)
+- Node.js > 16.0.0: [download](https://nodejs.org/en/download/)
+- Npm > 7.10.0 (usually installs with node.js)
+
+Or, to run with docker:
+
+- Docker-daemon > 20.0.0
+- Docker-cli > 20.0.0
 
 This is a React project generated with _create-react-app_, so steps to run it
 are very common:
