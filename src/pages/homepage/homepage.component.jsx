@@ -6,7 +6,6 @@ import CustomButtonLink from "../../components/custom-button-link/custom-button-
 import { Link } from "react-router-dom";
 import { Component } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
 
 import OptionCards from "../../components/option-cards/option-cards.component";
 import Underline from "../../components/underline/underline.component";
