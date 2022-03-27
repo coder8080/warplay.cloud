@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import "./register-page.styles.scss";
 import CustomInput from "../../components/custom-input/custom-input.component";
-import CustomButton from "../../components/custom-button/custom-button.components";
+import CustomButton from "../../components/custom-button/custom-button.component";
 import RegisterLinks from "../../components/register-links/register-links.components";
 
 const RegisterPage = () => (

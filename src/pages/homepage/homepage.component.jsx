@@ -38,6 +38,8 @@ class HomePage extends Component {
 
   componentWillUnmount() {
     document.querySelector("body").onscroll = null;
+    document.querySelector(".header").classList.remove("active");
+    document.querySelector(".heading").classList.remove("deactive");
   }
 
   render() {
