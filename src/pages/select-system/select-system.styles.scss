@@ -1,0 +1,38 @@
+.select-system-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141c24;
+  color: white;
+  .systems-content {
+    display: flex;
+    flex-direction: column;
+
+    .title-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+
+      i {
+        margin-right: 10px;
+        color: white;
+        font-size: 30px;
+      }
+    }
+
+    .available-systems {
+      width: 500px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      img {
+        width: 100px;
+        cursor: pointer;
+      }
+    }
+  }
+}

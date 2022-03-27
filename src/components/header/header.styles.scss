@@ -13,7 +13,7 @@
   transition: opacity 0.1s linear;
   padding-right: 40px;
 
-  &:not(.active) {
+  &:not(.active):not(:hover) {
     opacity: 0;
   }
 

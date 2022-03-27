@@ -1,5 +1,7 @@
-import "./header.styles.scss";
 import { Component } from "react";
+
+import CustomLink from "../custom-link/custom-link.component";
+import "./header.styles.scss";
 
 class Header extends Component {
   state = {
@@ -24,10 +26,16 @@ class Header extends Component {
         <div
           className={`options-container ${this.state.active ? "active" : ""}`}
         >
-          <span className="option active">Main</span>
+          <CustomLink to="/" className="option">
+            Main
+          </CustomLink>
           <span className="option">Servers</span>
-          <span className="option">Download</span>
-          <span className="option">Open in browser</span>
+          <CustomLink to="/download" className="option">
+            Download
+          </CustomLink>
+          <CustomLink to="/register" className="option">
+            Open in browser
+          </CustomLink>
           <span className="option">Pricing</span>
           <span className="option">Support</span>
           <span className="option">Contacts</span>

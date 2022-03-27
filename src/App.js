@@ -5,6 +5,7 @@ import HomePage from "./pages/homepage/homepage.component";
 import Header from "./components/header/header.component";
 import RegisterPage from "./pages/register-page/register-page.component";
 import LoginPage from "./pages/login-page/login-page.component";
+import SelectSystemPage from "./pages/select-system/select-system.components";
 import store from "./redux/store";
 import "./aos.css";
 import "./App.scss";
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/download" element={<SelectSystemPage />} />
       </Routes>
     </Provider>
   );

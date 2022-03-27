@@ -89,7 +89,7 @@ class HomePage extends Component {
                 Gb RAM and internet access 15 mbit/s on all operating systems -
                 Windows 7, 8, 10, 11, MacOs and Linux
               </p>
-              <Link className="link bottom-link" to="/register">
+              <Link className="link bottom-link big-link" to="/download">
                 Download
               </Link>
             </div>
@@ -125,7 +125,7 @@ class HomePage extends Component {
                 </div>
               </div>
             </div>
-            <Link className="link start-now-link" to="/register">
+            <Link className="link start-now-link big-link" to="/register">
               Start now
             </Link>
           </div>
@@ -149,7 +149,7 @@ class HomePage extends Component {
                 Our module is availble for all popular operating systems and
                 work on all computers.
               </p>
-              <Link className="link bottom-link" to="/download">
+              <Link className="link bottom-link big-link" to="/download">
                 Open in browser
               </Link>
             </div>
