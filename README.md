@@ -43,6 +43,21 @@ This command will also open browser window.
 
 ## Production mode
 
+There are two ways to run the production build.
+
+### Docker
+
+This project is available as a docker container. Download and run with commands:
+
+```bash
+docker pull coder8080/warplaycloud
+docker run -p 3000:3000 coder8080/warplaycloud
+```
+
+Download may take some time, please be patient.
+
+### Create your own build
+
 Create a production build:
 
 ```bash

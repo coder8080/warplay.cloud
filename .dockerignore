@@ -1,0 +1,10 @@
+build
+build/*
+node_modules
+node_modules/*
+.gitignore
+package-lock.json
+LISENCE
+README.md
+.git
+.git/*
