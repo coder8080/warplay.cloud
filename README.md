@@ -1,5 +1,7 @@
 # Warplaycloud
 
+Github pages: [link](https://coder8080.github.io/warplay.)cloud/
+
 Fun website for cloud gaming company. Created to improve my css skills and
 based on [this](https://www.figma.com/file/6rZ2mZiOVinWUpqP9hpTDn/Warplaycloud?node-id=2%3A2)
 Figma project.

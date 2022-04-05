@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/warplay.cloud">
     <React.StrictMode>
       <App />
     </React.StrictMode>
