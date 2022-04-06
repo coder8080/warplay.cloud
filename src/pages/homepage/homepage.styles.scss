@@ -22,6 +22,12 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 500px) {
+      & {
+        padding: 20px;
+      }
+    }
+
     .banner {
       width: 100%;
       min-height: 100%;
@@ -70,6 +76,12 @@
       }
 
       .line {
+        @media screen and (max-width: 500px) {
+          & {
+            display: none;
+          }
+        }
+
         position: absolute;
         right: 30px;
         width: 2px;
