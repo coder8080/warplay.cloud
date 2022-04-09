@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/warplay.cloud/static/css/main.a009720a.css",
-    "main.js": "/warplay.cloud/static/js/main.9a99cdfb.js",
+    "main.css": "/warplay.cloud/static/css/main.841f0c49.css",
+    "main.js": "/warplay.cloud/static/js/main.c25acb6d.js",
+    "static/media/3.jpg": "/warplay.cloud/static/media/3.e604ed05d2f12b288a9f.jpg",
+    "static/media/2.jpg": "/warplay.cloud/static/media/2.fe8c762ea62f326ff956.jpg",
     "static/media/screenshots.png": "/warplay.cloud/static/media/screenshots.be4e03bee5e84a045c40.png",
+    "static/media/1.jpg": "/warplay.cloud/static/media/1.0ff64c74dbfa36e1bdcc.jpg",
     "static/media/computer-and-server.png": "/warplay.cloud/static/media/computer-and-server.75c78ffb3a79d29559d6.png",
     "static/media/map.png": "/warplay.cloud/static/media/map.02445e64d9f200189b16.png",
     "static/media/pos.png": "/warplay.cloud/static/media/pos.3ca115adb0f9e82793f0.png",
@@ -11,11 +14,11 @@
     "static/media/apple.svg": "/warplay.cloud/static/media/apple.cb6b1de7f142e859d32787fe4e265381.svg",
     "static/media/windows.svg": "/warplay.cloud/static/media/windows.e38ae552b9c6e6534dcaebf2667e6b51.svg",
     "index.html": "/warplay.cloud/index.html",
-    "main.a009720a.css.map": "/warplay.cloud/static/css/main.a009720a.css.map",
-    "main.9a99cdfb.js.map": "/warplay.cloud/static/js/main.9a99cdfb.js.map"
+    "main.841f0c49.css.map": "/warplay.cloud/static/css/main.841f0c49.css.map",
+    "main.c25acb6d.js.map": "/warplay.cloud/static/js/main.c25acb6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a009720a.css",
-    "static/js/main.9a99cdfb.js"
+    "static/css/main.841f0c49.css",
+    "static/js/main.c25acb6d.js"
   ]
 }
