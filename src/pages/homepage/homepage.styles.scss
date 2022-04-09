@@ -50,6 +50,10 @@
         font-size: 50px;
         transition: opacity 0.1s linear;
 
+        @media screen and (max-height: 470px) {
+          font-size: 40px;
+        }
+
         @media (max-width: 800px) {
           & {
             display: flex;
@@ -71,6 +75,9 @@
 
         .title {
           font-size: 50px;
+          @media screen and (max-height: 470px) {
+            font-size: 30px;
+          }
           margin: 0;
         }
       }
@@ -153,6 +160,10 @@
       width: 1px;
       background-color: #343434;
       left: 10px;
+
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
     }
 
     .text {

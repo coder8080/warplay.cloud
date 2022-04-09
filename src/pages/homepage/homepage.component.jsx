@@ -87,7 +87,7 @@ class HomePage extends Component {
               <p className="text" data-aos="fade-right">
                 The app wil start on every PC with processor at least 1.5GHz, 1
                 Gb RAM and internet access 15 mbit/s on all operating systems -
-                Windows 7, 8, 10, 11, MacOs and Linux
+                Windows 7, 8, 10, 11, MacOs and Linux.
               </p>
               <Link className="link bottom-link big-link" to="/download">
                 Download
