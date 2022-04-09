@@ -14,17 +14,34 @@
   min-height: 100vh;
 
   .banner-container {
+    --padding: 50px;
+    padding: var(--padding);
     width: 100%;
     min-height: 100vh;
-    padding: 50px;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     @media screen and (max-width: 500px) {
-      & {
-        padding: 20px;
+      --padding: 20px;
+    }
+
+    .line-after-button {
+      position: absolute;
+      bottom: 0;
+      width: 1px;
+      background-color: white;
+      animation: toBottom2 4s linear infinite;
+
+      @keyframes toBottom2 {
+        from {
+          height: 0;
+        }
+        to {
+          height: calc(3.1rem + var(--padding));
+        }
       }
     }
 
@@ -39,10 +56,18 @@
       box-shadow: 0 0 30px #57d6ff;
       position: relative;
       border: 2px solid #57d6ff;
-      background-image: url("https://a-static.besthdwallpaper.com/2022-korol-kratos-bog-voyny-ragnarok-komp-yuternaya-igra-oboi-2560x2048-75095_33.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+      overflow: hidden;
+
+      .background {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: 1s;
+      }
 
       .heading {
         position: absolute;
@@ -108,23 +133,9 @@
 
       .bottom-button-container {
         position: absolute;
-        bottom: 10%;
-      }
-
-      .line-after-button {
-        position: absolute;
-        bottom: -10%;
-        width: 1px;
-        background-color: white;
-        animation: toBottom2 4s linear infinite;
-
-        @keyframes toBottom2 {
-          from {
-            height: 0;
-          }
-          to {
-            height: 18%;
-          }
+        bottom: 3rem;
+        * {
+          display: block;
         }
       }
     }
